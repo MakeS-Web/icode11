@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      background-color: #f7f7f7;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 80%;
+      max-width: 900px;
+      height: 500px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: white;
+    }
+    .form-container {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .form-container h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      color: #2c2c2c;
+    }
+
+    .form-container p {
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .form-container input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .form-container .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #007b8f;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-container .button:hover {
+      background-color: #005f6f;
+    }
+
+    .form-container .social-login {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-container .social-login button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-container .social-login button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .form-container a {
+      margin-top: 10px;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #007b8f;
+    }
+    .image-container {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUexDAn5ZYvLZfK95xNPcOglkHCbakYYhtlw&s');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>Log In</h2>
+      <p>Log in to your account to upload or download pictures, videos or music.</p>
+      <input type="email" placeholder="Enter your email address" required />
+      <button class="button">Next →</button>
+      <a href="#">Forgot password?</a>
+
+      <div class="social-login">
+        <button>Facebook</button>
+        <button>Google</button>
+      </div>
+
+      <a href="#">Don’t have an account yet? <strong>Sign up</strong></a>
+    </div>
+    <div class="image-container">
+    </div>
+  </div>
+</body>
+</html>
